@@ -11,11 +11,6 @@ const b = 3.14;
 // Affichage du type de la constante
 console.log(typeof b);
 
-// Déclaration de fonctions
-function c() {
-    return a + b;
-}
-
 // Déclaration de classes
 class D {
     constructor() {
