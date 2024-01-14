@@ -2,3 +2,8 @@
 ## C
 ## C++
 ## C#
+## Java
+## JavaScript
+### TypeScript
+## Perl
+## Python
