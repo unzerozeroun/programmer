@@ -6,4 +6,7 @@
 ## JavaScript
 ### TypeScript
 ## Perl
+## PHP
 ## Python
+## Rust
+### WebAssembly
