@@ -1,1 +1,12 @@
 # Programmer
+## C
+## C++
+## C#
+## Java
+## JavaScript
+### TypeScript
+## Perl
+## PHP
+## Python
+## Rust
+### WebAssembly
