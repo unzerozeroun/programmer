@@ -12,13 +12,14 @@ else {
     console.log("a est égal à b");
 }
 
-// Exemple de boucles
+// Exemples de boucles (for et while)
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
 
-var i = 0;
-while (i < 10) {
+var i = 100;
+
+while (i < 110) {
     console.log(i);
     i++;
 }
