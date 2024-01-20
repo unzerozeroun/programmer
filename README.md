@@ -1,12 +1,13 @@
 # Programmer
-## C
-## C++
-## C#
-## Java
-## JavaScript
-### TypeScript
-## Perl
-## PHP
-## Python
-## Rust
-### WebAssembly
+
+## [C](/c/)
+## [C++](/cpp/)
+## [C#](/csharp/)
+## [Java](/java/)
+## [JavaScript](/javascript/)
+### [TypeScript](/javascript/typescript/)
+## [Perl](/perl/)
+## [PHP](/php/)
+## [Python](/python/)
+## [Rust](/rust/)
+### [WebAssembly](/rust/webassembly/)
