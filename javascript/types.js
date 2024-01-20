@@ -11,7 +11,7 @@ console.log(a);
 console.log(typeof b);
 
 // Déclaration de variables de type chaîne de caractères
-let c = 'Hello World!';
+let c = `Hello World!`;
 
 // Déclaration de variables de type booléen
 let d = true;
