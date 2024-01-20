@@ -1,5 +1,5 @@
 // Déclaration de variables
-var a = 1;
+let a = 1;
 
 // Déclaration de constantes
 const b = 3.14;
@@ -18,11 +18,11 @@ class D {
 }
 
 // Affichage à partir d'une classe
-var d = new D();
+let d = new D();
 console.log(d.e);
 
 // Déclaration d'objets
-var f = {
+let f = {
     g: 4,
     h: 5
 };
@@ -31,13 +31,13 @@ var f = {
 console.log(f.h);
 
 // Déclaration de tableaux
-var i = [6, 7, 8];
+let i = [6, 7, 8];
 
 // Affichage à partir d'un tableau
 console.log(i[2]);
 
 // Déclaration de tableaux associatifs
-var j = {
+let j = {
     k: 9,
     l: 10
 };
