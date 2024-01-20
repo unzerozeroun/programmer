@@ -1,46 +1,58 @@
-// Déclaration de variables
+// Déclaration de variable de type entier
 let a = 1;
 
-// Déclaration de constantes
+// Déclaration de constante de type réel
 const b = 3.14;
 
-// Affichage de variables
+// Affichage de variable
 console.log(a);
 
 // Affichage du type
 console.log(typeof b);
 
+// Déclaration de variables de type chaîne de caractères
+let c = 'Hello World!';
+
+// Déclaration de variables de type booléen
+let d = true;
+
+// Déclaration d'une variable non initialisée
+let e;
+
+// Déclaration d'une variable null
+let f = null;
+
 // Déclaration de classes
 class D {
     constructor() {
-        this.e = 3;
+        this.v = 3;
     }
 }
 
 // Affichage à partir d'une classe
-let d = new D();
-console.log(d.e);
+let g = new D();
+console.log(g.v);
 
 // Déclaration d'objets
-let f = {
-    g: 4,
-    h: 5
+let h = {
+    i: 4,
+    j: 5
 };
 
 // Affichage à partir d'un objet
-console.log(f.h);
+console.log(h.j);
 
 // Déclaration de tableaux
-let i = [6, 7, 8];
+let k = [6, 7, 8];
 
 // Affichage à partir d'un tableau
-console.log(i[2]);
+console.log(k[2]);
 
 // Déclaration de tableaux associatifs
-let j = {
-    k: 9,
-    l: 10
+let l = {
+    m: 9,
+    n: 10
 };
 
 // Affichage à partir d'un tableau associatif
-console.log(j['k']);
+console.log(l['m']);
