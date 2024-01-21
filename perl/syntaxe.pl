@@ -7,5 +7,5 @@ Ceci est un commentaire
 sur plusieurs lignes
 */
 
-my $variable = "Hello, World!"; # On peut aussi mettre un commentaire à la fin d'une ligne.
+my $variable = "Hello, World!"; # On peut aussi mettre un commentaire en fin ligne.
 print $variable;
