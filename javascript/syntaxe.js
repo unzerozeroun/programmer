@@ -1,13 +1,9 @@
-// Ceci est un commentaire sur une ligne.
-
-let a = 1; // On peut également commenter en fin de ligne.
-
-/* Ceci est un commentaire
-sur plusieurs lignes */
+// Commentaire sur une ligne.
 
 /* 
-Ceci est aussi 
-un commentaire
-sur plusieurs 
-lignes. 
+Ceci est un commentaire 
+sur plusieurs lignes.
 */
+
+let variable = `Hello, World!`; // On peut également commenter en fin de ligne.
+console.log(variable); // Affichage de la variable a.

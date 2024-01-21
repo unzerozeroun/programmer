@@ -1,1 +1,3 @@
 # Perl
+
+Pour vérifier si Perl (Practical Extraction and Reporting Language) est bien installé, ouvrir le [terminal](https://support.apple.com/fr-ca/guide/terminal/) (macOS) ou le command prompt (Windows) et taper `perl -v` Si aucun numéro de version ne s'affiche, il peut être téléchargé [ici](https://www.perl.org/get.html) Pour Windows, sélectionner StrawberryPerl et accepter toutes les autorisations lors de l'installation. 
