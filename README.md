@@ -20,8 +20,6 @@ git config --global user.email "votre.email@example.com"
 
 ## [C#](/csharp/)
 
-## [Java](/java/)
-
 ## [JavaScript](/javascript/)
 
 ### [TypeScript](/javascript/typescript/)
