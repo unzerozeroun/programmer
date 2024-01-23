@@ -2,9 +2,9 @@
 
 /*
 Compilation :
-    gcc syntaxe.c -o syntaxe
+    gcc syntaxe.c -o syntaxe.out
 Exécution :
-    ./syntaxe
+    ./syntaxe.out
 */
 
 int main() { // Définit la fonction principale main qui est le point d'entrée de chaque programme en C.
