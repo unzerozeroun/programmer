@@ -1,7 +1,5 @@
 # Reverse ingenering
-## Créer un hw.c
-
-
+### Créer un hw.c
 ```
 #include <stdio.h>  
 int main(int argc, const char * argv[]) 
@@ -11,7 +9,7 @@ int main(int argc, const char * argv[])
   return 0; 
 }
 ```
-## Compiler
+### Compiler
 ```
 gcc -S hw.c
 as -o hw.o hw.s
@@ -21,14 +19,14 @@ clang -o hw hw.o
 
 Les fichiers .o, ou fichiers objet, sont des fichiers binaires contenant le code machine généré par l'assemblage (ou la compilation) de votre code source. Ils ne sont pas destinés à être lus directement par des humains. Cependant, vous pouvez utiliser des outils comme objdump ou otool (sur macOS) pour inspecter le contenu des fichiers objet de manière plus lisible.
 
-### Utiliser `objdump` 
+#### Utiliser `objdump` 
 Si vous avez objdump installé (disponible via les outils de développement GNU sur Linux ou via Homebrew sur macOS), vous pouvez l'utiliser pour afficher le contenu d'un fichier objet sous forme de désassemblage, ce qui vous donne une vue lisible du code machine :
 
 ```objdump -d main.o```
 
 Cette commande affiche le code désassemblé contenu dans main.o, vous permettant de voir le code machine sous forme de mnémoniques d'assembleur.
 
-### Utiliser otool sur macOS
+#### Utiliser `otool` sur macOS
 
 Sur macOS, otool offre des fonctionnalités similaires. Pour voir le contenu d'un fichier objet en format lisible, utilisez :
 
