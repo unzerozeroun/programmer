@@ -2,9 +2,9 @@
 
 ## Installation
 
-[Windows](https://www.msys2.org) 
+Windows[MSYS2](https://www.msys2.org) 
 
-[macOS](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+macOS [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ### Documentation du compilateur 
 
