@@ -21,7 +21,7 @@ clang -o hw hw.o
 
 Les fichiers .o, ou fichiers objet, sont des fichiers binaires contenant le code machine généré par l'assemblage (ou la compilation) de votre code source. Ils ne sont pas destinés à être lus directement par des humains. Cependant, vous pouvez utiliser des outils comme objdump ou otool (sur macOS) pour inspecter le contenu des fichiers objet de manière plus lisible.
 
-### Utiliser objdump
+### Utiliser `objdump` 
 Si vous avez objdump installé (disponible via les outils de développement GNU sur Linux ou via Homebrew sur macOS), vous pouvez l'utiliser pour afficher le contenu d'un fichier objet sous forme de désassemblage, ce qui vous donne une vue lisible du code machine :
 
 ```objdump -d main.o```
