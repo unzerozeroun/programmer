@@ -14,6 +14,8 @@ git config --global user.email "votre.email@example.com"
 - Optionnel, mais hautement recommandé si vous pouvez payer : S'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
 - Créer un compte [ChatGPT](https://chat.openai.com/)
 
+## [Assembly](/assembly/)
+
 ## [C](/c/)
 
 ## [C++](/cpp/)
