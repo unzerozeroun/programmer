@@ -19,7 +19,7 @@ lignes
 */
 ```
 
-
 ## Contenu
 
-Premier script : [Hello World!](hw.c) couvre l'ajout de commentaires et l'affichage d'une chaine de caractères.
+- [Hello World!](hw.c) afficher une chaine de caractères.
+- [Les types](types.c)

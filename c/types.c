@@ -9,9 +9,7 @@ int main() {
     printf("a = %d, b = %f, c = %f, d = %c\n", a, b, c, d); // Affiche les valeurs des variables a, b, c et d.
     // %d pour un entier, %f pour un flottant, %c pour un caractère.
 
-    // Les types scalaires sont des types de base, qui ne sont pas composés d'autres types.
-    
-    // Les types scalaires sont :
+    // Les types scalaires sont des types de base, qui ne sont pas composés d'autres types, incluant...
     // - Les entiers (int, short, long, long long, unsigned int, unsigned short, unsigned long, unsigned long long, char, unsigned char)
     // - Les flottants (float, double, long double)
     // - Les caractères (char)
