@@ -5,5 +5,5 @@ Ceci est un commentaire
 sur plusieurs lignes.
 */
 
-let variable = `Hello, World!`; // On peut également commenter en fin de ligne.
-console.log(variable); // Affichage de la variable a.
+let str = `Hello, World!`; // On peut également commenter en fin de ligne.
+console.log(str); // Affichage de la variable str.
