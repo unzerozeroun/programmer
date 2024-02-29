@@ -2,7 +2,7 @@
 Compilation :
     g++ hw.cpp -o hw.out
 Exécution :
-    ./a.out
+    ./hw.out
 */
 
 #include <iostream> // inclure la librairie iostream pour utiliser cout et endl

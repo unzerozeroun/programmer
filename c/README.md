@@ -10,6 +10,18 @@ macOS [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 [GCC](https://gcc.gnu.org/onlinedocs/)
 
+## L'ajout de commentaires en C
+
+``
+// Sur une ligne
+
+/*
+Sur plusieurs
+lignes
+*/
+``
+
+
 ## Contenu
 
-Premier script : [Hello World!](hw.c)
+Premier script : [Hello World!](hw.c) couvre l'ajout de commentaires et l'affichage d'une chaine de caractères.

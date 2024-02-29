@@ -8,4 +8,6 @@ sur plusieurs lignes
 =cut
 
 my $variable = "Hello, World!"; # On peut aussi mettre un commentaire en fin ligne.
+
+
 print $variable;
