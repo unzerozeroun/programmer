@@ -16,10 +16,7 @@ int main() {
     // - Les booléens (bool)
     // - Les types void (void)
     
-    // La taille des types scalaires dépend de l'architecture de la machine.
-    // Par exemple, sur une architecture 32 bits, un entier (int) est codé sur 4 octets (32 bits).
-    // Sur une architecture 64 bits, un entier (int) est codé sur 8 octets (64 bits).
-    // La taille des types scalaires est donnée par l'opérateur sizeof.
+    // La taille des types scalaires dépend de l'architecture de la machine peut être révélé via l'opérateur sizeof.
     printf("sizeof(int) = %lu\n", sizeof(int)); // Affiche la taille d'un entier (int) en octets.
     printf("sizeof(float) = %lu\n", sizeof(float)); // Affiche la taille d'un flottant (float) en octets.
     printf("sizeof(double) = %lu\n", sizeof(double)); // Affiche la taille d'un flottant double précision (double) en octets.
