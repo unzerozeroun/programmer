@@ -9,6 +9,7 @@ rustc --version
 cargo --version
 rustdoc --version
 ````
+**Cargo** gère les dépendances, télécharge et construit les librairies externes et exécute `rustc` avec les paramètres adéquats.
 
 ### Mise à jour et désinstallation
 ````
@@ -17,10 +18,12 @@ rustup self uninstall
 ````
 
 ## Hello World!
-La commande `new` va créer la base dans un dossier *hello* et `run` va compiler le fichier *main.rs* du dossier *src* et tout déposer dans le dossier *target* avant d'excuter le script. La commande `clean` effacera ensuite les fichiers construits dans le dossier *target*.
+La commande `new` va créer la base dans un dossier *hello* et `run` va compiler en mode *debug* le fichier **main.rs** du dossier **src**, et publier les fichiers construits dans un dossier **target** avant d'exécuter le script. La commande `clean` efface les fichiers construits (modes *debug* et *release*).
 ````
 cargo new hello
 cd hello
 cargo run
 cargo clean
 ````
+
+#### Construction en mode *release* `cargo build --release` 
