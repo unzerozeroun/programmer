@@ -12,8 +12,13 @@ git config --global user.email "votre.email@example.com"
 - Créer un compte [GitHub](https://github.com/)
 - Optionnel :
   - installer [GitHub Desktop](https://desktop.github.com/)
-- Optionnel, mais hautement recommandé si vous pouvez payer : S'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
-- Créer un compte [ChatGPT](https://chat.openai.com/)
+  - créer un compte [ChatGPT](https://chat.openai.com/)
+  - s'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
+- Installer [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/) Test suivant l'installation...
+
+```
+docker version
+``` 
 
 ## [Assembly](/assembly/)
 
