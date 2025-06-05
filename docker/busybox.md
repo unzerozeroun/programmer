@@ -1,5 +1,7 @@
 # Résumé des commandes BusyBox (Alpine)
 
+* On peut faire <CMD> --help pour afficher les options de chacune.
+
 | Commande       | Description brève |
 |----------------|-------------------|
 | `arch`         | Affiche l’architecture (ex : x86_64). |
