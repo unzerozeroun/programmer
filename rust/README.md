@@ -1,5 +1,7 @@
 # Rust
 
+Lire le [README](../README.md) à la racine si ce n'est pas déjà fait.
+
 ## Installation
 [rust-lang.org](https://www.rust-lang.org/fr/tools/install)
 
