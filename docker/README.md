@@ -41,7 +41,16 @@ docker build -t <DockerHubUserName>/<nom_image>:<tag> .
 docker push <DockerHubUserName>/<nom_image>:<tag>
 ````
 #### Pour un registre local
-Voir aussi `pousser_au_registre.sh`
+Voir `docker-compose.yml`
+````
+docker compose up -d
+````
+- `docker compose up -d` : démarrage en mode détaché (en arrière-plan).
+- `docker compose down` : arrête et supprime les conteneurs créés.
+- `docker compose build` : construit les images sans les exécuter.
+- `docker compose config` : vérifie et affiche la configuration effective.
+
+Voir `pousser_au_registre.sh`
 ````
 docker run -d -p 5005:5000 --name registre_local registry:2
 docker build -t localhost:5005/mini_alpine:dev .
