@@ -1,6 +1,6 @@
 # Conteneur minimaliste Alpine
 
-## Construction de l'image et création et démarrage d'un conteneur
+## Construction de l'image suivi de la création et démarrage d'un conteneur
 ```
 ./docker_build.sh
 ```
