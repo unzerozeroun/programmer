@@ -22,7 +22,7 @@ int main() {
     printf("sizeof(double) = %lu\n", sizeof(double)); // Affiche la taille d'un flottant double précision (double) en octets.
     printf("sizeof(char) = %lu\n", sizeof(char)); // Affiche la taille d'un caractère (char) en octets.
     printf("sizeof(bool) = %lu\n", sizeof(_Bool)); // Affiche la taille d'un booléen (_Bool) en octets.
-    printf("sizeof(void) = %lu\n", sizeof(void)); // Affiche la taille du type void en octets.
+    printf("sizeof(void*) = %lu\n", sizeof(void*)); // Affiche la taille d'un pointeur sur void en octets.
     
     return 0;
 }
