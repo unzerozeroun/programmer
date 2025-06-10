@@ -28,25 +28,15 @@ docker version
   - Créer un compte [ChatGPT](https://chat.openai.com/)
   - S'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
 
-
-## [Assembly](/assembly/)
-
-## [C](/c/)
-
-## [C++](/cpp/)
-
-## [C#](/csharp/)
-
-## [JavaScript](/javascript/)
-
-### [TypeScript](/javascript/typescript/)
-
-## [Perl](/perl/)
-
-## [PHP](/php/)
-
-## [Python](/python/)
-
-## [Rust](/rust/)
-
-### [WebAssembly](/rust/webassembly/)
+## Au menu
+- [Assembly](/assembly/)
+- [C](/c/)
+- [C++](/cpp/)
+- [C#](/csharp/)
+- [JavaScript](/javascript/)
+- - [TypeScript](/javascript/typescript/)
+- [Perl](/perl/)
+- [PHP](/php/)
+- [Python](/python/)
+- [Rust](/rust/)
+- - [WebAssembly](/rust/webassembly/)
