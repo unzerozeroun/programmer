@@ -53,6 +53,7 @@ docker push localhost:5005/mini_alpine:dev
 ````
 docker container export <ID> -o fichier.tar
 tar -tvf fichier.tar
+````
 
 ## Sécurité
 En production, les conteneurs devraient quasiment toujours tourner avec les droits d’un utilisateur non privilégié.
