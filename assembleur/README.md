@@ -1,4 +1,22 @@
-# Reverse ingenering
+# Assembleur
+
+## Installation sous macOS M1
+````
+sudo rm -rf /Library/Developer/CommandLineTools
+xcode-select --install
+brew install nasm
+# Vérification
+nasm -v
+````
+Tester hello.asm
+````
+nasm -f elf64 hello.asm -o hello.o
+ld hello.o -o hello
+./hello
+````
+
+
+## Reverse ingenering
 ### Créer un hw.c
 ```
 #include <stdio.h>  
@@ -16,6 +34,8 @@ as -o hw.o hw.s
 clang -o hw hw.o
 ./hw
 ```
+
+## Explorer
 
 Les fichiers .o, ou fichiers objet, sont des fichiers binaires contenant le code machine généré par l'assemblage (ou la compilation) de votre code source. Ils ne sont pas destinés à être lus directement par des humains. Cependant, vous pouvez utiliser des outils comme objdump ou otool (sur macOS) pour inspecter le contenu des fichiers objet de manière plus lisible.
 
