@@ -28,6 +28,11 @@ docker build [OPTIONS] -t <nom_image>:<tag> <chemin_contexte>
 | `--progress=plain`           | Affiche les logs de build plus lisiblement   |
 | `--rm` / `--force-rm`        | Supprime les conteneurs intermédiaires       |
 
+### Pousser dans DockerHub
+````
+docker build -t <DockerHubUserName>/<nom_image>:<tag> .
+docker push <DockerHubUserName>/<nom_image>:<tag>
+````
 
 ## Sécurité
 En production, les conteneurs devraient quasiment toujours tourner avec les droits d’un utilisateur non privilégié.
