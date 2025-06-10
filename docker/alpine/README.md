@@ -4,15 +4,13 @@
 ```
 ./docker_build.sh
 ```
-Identifier son IMAGE ID (hash unique)
+### Identifier son IMAGE ID (hash unique)
 ````
 docker image ls --filter reference="*alpine*"
 ````
-Accéder au conteneur
-````
-docker run -it --rm mini_alpine:dev sh
-````
+
 ## Résumé des commandes BusyBox (Alpine)
+Accéder au conteneur
 ````
 docker run -it --rm mini_alpine:dev sh
 # ls /bin
