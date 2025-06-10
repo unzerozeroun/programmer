@@ -1,8 +1,16 @@
 # Conteneur minimaliste Alpine
 
 ```
-docker 
+docker build -t alpine:dev .
 ```
+Une fois l'image construite, on va identifier son IMAGE ID
+````
+docker image ls
+````
+Puis on va exécuter un conteneur de cette image
+````
+docker run <IMAGE ID>
+````
 
 ## Résumé des commandes BusyBox (Alpine)
 
