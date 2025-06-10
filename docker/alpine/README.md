@@ -16,7 +16,7 @@ docker run -it --rm mini_alpine:dev sh
 # ls /bin
 ````
 
-On peut faire <CMD> --help pour afficher les options de chacune.
+On peut faire CMD --help pour afficher les options de chacune.
 
 | Commande       | Description brève |
 |----------------|-------------------|
