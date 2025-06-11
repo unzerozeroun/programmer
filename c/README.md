@@ -25,3 +25,17 @@ lignes
 
 - [Hello World!](hw.c) afficher une chaine de caractères.
 - [Les types](types.c)
+
+## Compilation
+````
+# Compilation
+clang -o <nom_du_fichier> <nom_du_fichier>.c
+# Exécution
+./<nom_du_fichier>
+
+# OU utiliser le makefile 
+make run FILE=<nom_du_fichier>
+
+# Nettoyage
+make clean FILE=<nom_du_fichier>
+````

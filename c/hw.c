@@ -1,10 +1,10 @@
 /*
 Compilation :
-    gcc hw.c -o hw.out
-Autorisation de l'exécution :
-    chmod +x hw.out
+    clang -o hw hw.c
 Exécution :
-    ./hw.out
+    ./hw
+OU considérant le makefile tout simplement 
+    make run FILE=hw
 */
 
 #include <stdio.h> // Cette ligne inclut le fichier d'en-tête standard d'entrée/sortie pour utiliser la fonction printf.
