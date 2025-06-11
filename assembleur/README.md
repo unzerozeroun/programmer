@@ -7,7 +7,7 @@ Observons sous le capot comment le langage C se transforme en instructions assem
 
 ### Compiler et exécuter la source main.c
 ```bash
-# Compilation C → Assembleur : À quoi ressemble l’assembleur généré ?
+# Compilation C → Assembleur : À quoi ressemble l’assembleur généré ? Voir main.s
 gcc -S main.c
 # Assemblage → Objet : Comment on transforme du texte assembleur en objet ?
 as -o main.o main.s
@@ -58,6 +58,23 @@ Et avec objdump, pour voir les symboles :
 objdump -t main.o
 ```
 
-
 Ces commandes vous donnent un aperçu des différents symboles (fonctions, variables) présents dans le fichier objet, qui peuvent être utiles pour le débogage ou l'analyse de la structure du programme.
  
+## ⚙️ Options d’optimisation du compilateur (-O, -O1, -O2, -O3, etc.)
+
+| Option   | Description succincte                                                              | Usage recommandé                                |
+| -------- | ---------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `-O0`    | 🔴 **Aucune optimisation** — code brut et lisible                                  | Pour le **debug**, ou observer l'ASM            |
+| `-O1`    | 🟡 Optimisation légère (taille et vitesse)                                         | Code + rapide, mais lisible                     |
+| `-O2`    | 🟢 Optimisation standard (sans prendre de risques de bugs)                         | Idéal pour un bon **compromis perf/lisibilité** |
+| `-O3`    | 🔵 Optimisation agressive (vectorisation, inlining fort, etc.)                     | Pour la **performance brute**                   |
+| `-Os`    | 📦 Optimisation pour réduire la taille du binaire                                  | Pour embarqué ou petit code                     |
+| `-Ofast` | 🚀 Optimisation extrême : autorise des simplifications risquées                    | Performance max, ⚠️ peut casser du code         |
+| `-Og`    | 🛠️ Optimisation pour **debugger** (comme `-O0`, mais avec quelques optimisations) | Meilleur que `-O0` pour debug                   |
+
+### 🔍 Exemples pratiques
+```bash
+gcc -S -O0 prog.c -o prog_O0.s   # Code assembleur lisible, non optimisé
+gcc -S -O2 prog.c -o prog_O2.s   # Optimisé de façon classique
+gcc -S -O3 prog.c -o prog_O3.s   # Très optimisé, plus complexe à lire
+```
