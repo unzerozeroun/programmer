@@ -1,4 +1,4 @@
-# Usage : make run FILE=hw
+# Usage : make run FILE=<nom_du_fichier>
 
 # Nom de base du fichier (sans extension)
 FILE ?= main
