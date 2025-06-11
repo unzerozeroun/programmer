@@ -2,7 +2,7 @@
 
 ## Construction d'un environnement
 Les trois outils de base...
-
+![Icons](icons.png)
 ### Visual Studio Code
 - Installer VSC [Visual Studio Code](https://code.visualstudio.com/download)
 
