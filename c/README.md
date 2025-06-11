@@ -12,7 +12,7 @@ Documentation du compilateur [GCC](https://gcc.gnu.org/onlinedocs/)
 
 ## L'ajout de commentaires en C
 
-```
+```bash
 // Sur une ligne
 
 /*
@@ -27,7 +27,7 @@ lignes
 - [Les types](types.c)
 
 ## Compilation
-````
+```bash
 # Compilation
 clang -o <nom_du_fichier> <nom_du_fichier>.c
 # Exécution
@@ -38,4 +38,4 @@ make run FILE=<nom_du_fichier>
 
 # Nettoyage
 make clean FILE=<nom_du_fichier>
-````
+```
