@@ -1,14 +1,17 @@
 # Programmer
 
 ## Construction d'un environnement
-Les trois outils de base...
-![Icons](icons.png)
+Les quatre outils de base... ![Icons](icons.png)
+
+### Terminal
+- Déjà installé
+
 ### Visual Studio Code
 - Installer VSC [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### GIT
 - Installer un gestionnaire de version [Git](https://git-scm.com/download) 
-```
+```bash
 # Vérification suivant l’installation…
 git --version
 git config --global user.name "Votre Nom"
@@ -18,7 +21,7 @@ git config --global user.email "votre.email@example.com"
 
 ### Docker
 - Installer [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/)
-```
+```bash
 # Vérification suivant l’installation…
 docker version
 ``` 
