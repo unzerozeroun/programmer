@@ -135,3 +135,16 @@ docker run -d \
   --label maintainer="toi@example.com" \
   nginx
 ```
+## Example dans un fichier YAML
+```bash
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    labels:
+      env: "dev"
+      app: "frontend"
+      maintainer: "toi@example.com"
+```
+
