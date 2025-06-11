@@ -73,17 +73,54 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 ```
 
-# Conteneurs
+# 🐳 Docker – Commandes et Options essentielles pour les conteneurs
+
+## 🛠️ Principales options de `docker run`
+
+| Option                         | Description |
+|--------------------------------|-------------|
+| `--name <nom>`                | Donne un nom explicite au conteneur |
+| `--rm`                        | Supprime le conteneur automatiquement après son arrêt |
+| `-d`                          | Lance le conteneur en arrière-plan (mode daemon) |
+| `-it`                         | Mode interactif avec terminal (`-i` + `-t`) |
+| `-p <hôte>:<conteneur>`       | Mappe un port local vers le conteneur (ex: `-p 8080:80`) |
+| `-v <hôte>:<conteneur>`       | Monte un volume (ex: `-v $(pwd):/app`) |
+| `-e VAR=valeur`               | Définit une variable d’environnement |
+| `--network <nom>`             | Connecte à un réseau Docker |
+| `--entrypoint <commande>`     | Redéfinit le point d’entrée par défaut |
+| `--privileged`                | Donne des droits système étendus |
+| `--restart always`            | Redémarre automatiquement le conteneur après un arrêt |
+
+---
+
+## 📋 Commandes de base liées aux conteneurs
+
+### ▶️ Lancer / Exécuter
 ```bash
-docker run -it ubuntu bash       # Nouveau conteneur interactif
-docker ps -a                     # Liste tous les conteneurs
-docker stop <id>                 # Arrêter un conteneur
-docker rm <id>                   # Supprimer un conteneur
-docker exec -it <id> bash        # Entrer dans un conteneur
-docker logs <id>                 # Lire les logs
-docker container prune           # Nettoyer les conteneurs arrêtés
+docker run hello-world                  # Test de base
+docker run -it ubuntu bash              # Shell interactif
+docker run -d -p 8080:80 nginx          # Serveur nginx en background
 ```
 
+### 📂 Gestion des conteneurs
+```bash
+docker ps                               # Conteneurs en cours
+docker ps -a                            # Tous les conteneurs
+docker stop <nom|id>                    # Arrêter un conteneur
+docker start <nom|id>                   # Démarrer un conteneur arrêté
+docker restart <nom|id>                 # Redémarrer
+docker rm <nom|id>                      # Supprimer un conteneur arrêté
+docker rm -f <nom|id>                   # Forcer la suppression
+docker container prune                  # Supprimer tous les conteneurs arrêtés
+```
+
+### 🔍 Inspection et interaction
+```bash
+docker logs <nom|id>                    # Voir les logs
+docker exec -it <nom|id> bash           # Entrer dans un conteneur
+docker cp fichier.txt <id>:/app/        # Copier un fichier vers un conteneur
+docker inspect <nom|id>                 # Infos détaillées (JSON)
+````
 
 ## Exportation
 ```bash
