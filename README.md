@@ -1,10 +1,25 @@
 # Programmer
 
-## Construction d'un environnement
-Les quatre outils de base... ![Icons](icons.png)
+## Construction d'un environnement sous macOS
+Les quatre outils de base...  
+![Icons](icons.png)
 
 ### Terminal
-- Déjà installé
+- Le Terminal est déjà installé, mais on va ajouter la suite d'outils pour les langages bas niveau (C, C++, Assembleur ARM64)
+```bash
+# Supprime l'ancienne version des CLT
+sudo rm -rf /Library/Developer/CommandLineTools
+# Réinstalle les outils de développement Apple de base (sans installer Xcode complet)
+xcode-select --install
+```
+✅ Outils fournis
+- clang : compilateur C/C++
+- as : assembleur (Apple, ARM64)
+- clang (ou ld) : linker
+- lldb : débogueur
+- make : système de build
+- man : pages de manuel (ex: man as, man gcc)
+- Fichiers headers système (/usr/include, stdio.h, etc.)
 
 ### Visual Studio Code
 - Installer VSC [Visual Studio Code](https://code.visualstudio.com/download)
@@ -32,7 +47,7 @@ docker version
   - S'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
 
 ## Au menu
-- [Assembly](/assembly/)
+- [Assembleur](/assembleur/)
 - [C](/c/)
 - [C++](/cpp/)
 - [C#](/csharp/)

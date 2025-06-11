@@ -1,24 +1,10 @@
 # Assembleur
 
-## Installation sous macOS M1
-````
-sudo rm -rf /Library/Developer/CommandLineTools
-xcode-select --install
-brew install nasm
-# Vérification
-nasm -v
-````
-Tester hello.asm
-````
-nasm -f elf64 hello.asm -o hello.o
-ld hello.o -o hello
-./hello
-````
-
+Lire le [README](../README.md) à la racine si ce n'est pas déjà fait.
 
 ## Reverse ingenering
-### Créer un hw.c
-```
+### Créer un main.c
+```c
 #include <stdio.h>  
 int main(int argc, const char * argv[]) 
 {     
@@ -27,12 +13,21 @@ int main(int argc, const char * argv[])
   return 0; 
 }
 ```
-### Compiler
-```
-gcc -S hw.c
-as -o hw.o hw.s
-clang -o hw hw.o
-./hw
+### Compiler et exécuter
+```bash
+# Compilation C → Assembleur : À quoi ressemble l’assembleur généré ?
+gcc -S main.c
+# Assemblage → Objet : Comment on transforme du texte assembleur en objet ?
+as -o main.o main.s
+# Linkage → Exécutable : Comment on construit un binaire exécutable ?
+clang -o main main.o
+# Exécution
+./main
+
+# OU exploiter le makefile...
+make run FILE=main
+# ...puis pour nettoyer
+make clean FILE=main
 ```
 
 ## Explorer
