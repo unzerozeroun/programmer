@@ -126,3 +126,12 @@ docker container export <ID> -o fichier.tar
 tar -tvf fichier.tar
 ```
 
+# 🏷️ Étiquettes 
+Les labels Docker sont des paires clé=valeur qu'on peut attacher à un conteneur, une image, un volume, un réseau, etc.
+```bash
+docker run -d \
+  --name mon-app \
+  --label env=prod \
+  --label maintainer="toi@example.com" \
+  nginx
+```
