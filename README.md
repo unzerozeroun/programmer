@@ -1,10 +1,10 @@
 # Programmer
 
-## Construction d'un environnement sous macOS
+## Construction d'un environnement sous macOS 🍎
 Les quatre outils de base...  
 ![Icons](icons.png)
 
-### Terminal
+### 🖥️ Terminal
 - Le Terminal est déjà installé, mais on va ajouter la suite d'outils pour les langages bas niveau (C, C++, Assembleur ARM64)
 ```bash
 # Supprime l'ancienne version des CLT
@@ -47,14 +47,15 @@ docker version
   - S'abonner à [GitHub Copilot](https://github.com/features/copilot/plans)
 
 ## Au menu
-- [Assembleur](/assembleur/)
+- 🛠️ [Assembleur](/assembleur/)
 - [C](/c/)
 - [C++](/cpp/)
 - [C#](/csharp/)
+- 🐳 [Docker](/docker/)
 - [JavaScript](/javascript/)
   - [TypeScript](/javascript/typescript/)
-- [Perl](/perl/)
-- [PHP](/php/)
-- [Python](/python/)
-- [Rust](/rust/)
+- 🐫 [Perl](/perl/)
+- 🐘 [PHP](/php/)
+- 🐍 [Python](/python/)
+- 🦀 [Rust](/rust/)
   - [WebAssembly](/rust/webassembly/)

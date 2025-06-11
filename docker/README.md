@@ -1,4 +1,4 @@
-# Docker
+# 🐳 Docker
 
 Lire le [README](../README.md) à la racine si ce n'est pas déjà fait.
 
@@ -63,7 +63,7 @@ docker push localhost:5005/mini_alpine:dev
 # Ici, la liste est visible via http://localhost:5005/v2/_catalog
 ```
 
-## Sécurité
+## 🔐 Sécurité
 En production, les conteneurs devraient quasiment toujours tourner avec les droits d’un utilisateur non privilégié.
 ```bash
 # Crée un utilisateur sans privilèges
@@ -73,18 +73,16 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 ```
 
-# 🐳 Docker – Commandes et Options essentielles pour les conteneurs
+#  Conteneurs
 
-## 📋 Commandes de base liées aux conteneurs
-
-### ▶️ Lancer / Exécuter
+## ▶️ Lancer / Exécuter
 ```bash
 docker run hello-world                  # Test de base
 docker run -it ubuntu bash              # Shell interactif
 docker run -d -p 8080:80 nginx          # Serveur nginx en background
 ```
 
-### 🛠️ Principales options de `docker run`
+## 🛠️ Principales options de `docker run`
 
 | Option                         | Description |
 |--------------------------------|-------------|
@@ -102,7 +100,7 @@ docker run -d -p 8080:80 nginx          # Serveur nginx en background
 
 ---
 
-### 📂 Gestion des conteneurs
+## 📂 Gestion des conteneurs
 ```bash
 docker ps                               # Conteneurs en cours
 docker ps -a                            # Tous les conteneurs
@@ -114,13 +112,13 @@ docker rm -f <nom|id>                   # Forcer la suppression
 docker container prune                  # Supprimer tous les conteneurs arrêtés
 ```
 
-### 🔍 Inspection et interaction
+## 🔍 Inspection et interaction
 ```bash
 docker logs <nom|id>                    # Voir les logs
 docker exec -it <nom|id> bash           # Entrer dans un conteneur
 docker cp fichier.txt <id>:/app/        # Copier un fichier vers un conteneur
 docker inspect <nom|id>                 # Infos détaillées (JSON)
-````
+```
 
 ## Exportation
 ```bash
