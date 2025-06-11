@@ -75,7 +75,16 @@ USER appuser
 
 # 🐳 Docker – Commandes et Options essentielles pour les conteneurs
 
-## 🛠️ Principales options de `docker run`
+## 📋 Commandes de base liées aux conteneurs
+
+### ▶️ Lancer / Exécuter
+```bash
+docker run hello-world                  # Test de base
+docker run -it ubuntu bash              # Shell interactif
+docker run -d -p 8080:80 nginx          # Serveur nginx en background
+```
+
+### 🛠️ Principales options de `docker run`
 
 | Option                         | Description |
 |--------------------------------|-------------|
@@ -92,15 +101,6 @@ USER appuser
 | `--restart always`            | Redémarre automatiquement le conteneur après un arrêt |
 
 ---
-
-## 📋 Commandes de base liées aux conteneurs
-
-### ▶️ Lancer / Exécuter
-```bash
-docker run hello-world                  # Test de base
-docker run -it ubuntu bash              # Shell interactif
-docker run -d -p 8080:80 nginx          # Serveur nginx en background
-```
 
 ### 📂 Gestion des conteneurs
 ```bash
