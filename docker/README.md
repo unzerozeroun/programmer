@@ -2,6 +2,10 @@
 
 Lire le [README](../README.md) à la racine si ce n'est pas déjà fait.
 
+## **Qu'est-ce que Docker ?**
+Docker est un outil qui permet d'exécuter des applications dans des **conteneurs** — des environnements isolés, reproductibles et portables. Grâce à Docker, une application peut être "emballée" avec tout ce dont elle a besoin (code, bibliothèques, configuration) et **fonctionner de la même manière partout** : en développement, en test, en production ou dans le cloud. Contrairement aux machines virtuelles, les conteneurs Docker sont **légers et rapides**, car ils partagent le noyau de l'hôte tout en restant isolés.
+✅ *Utilisation typique :* standardiser l’environnement de déploiement, lancer des services (web, base de données, scripts) ou tester du code sans polluer sa machine.
+
 ## Amorce
 ```bash
 sudo systemctl enable docker
