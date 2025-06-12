@@ -7,7 +7,8 @@ Docker est un outil qui permet d'exécuter des applications dans des **conteneur
 
 ✅ *Utilisation typique :* standardiser l’environnement de déploiement, lancer des services (web, base de données, scripts) ou tester du code sans polluer sa machine.
 
-## Amorce
+## Amorce sous macOS
+Démarrer simplement Docker Desktop
 ```bash
 sudo systemctl enable docker
 sudo systemctl start docker
@@ -168,5 +169,22 @@ Deux commandes pour afficher les infos
 ```bash
 docker version
 docker system info
+```
+
+# 💾 Volumes
+
+Un **volume Docker** permet de **stocker des données de manière persistante**, indépendamment du cycle de vie des conteneurs. Il est idéal pour :
+
+- Sauvegarder des fichiers (bases de données, logs…)
+- Partager des données entre plusieurs conteneurs
+- Garder les données même après suppression d’un conteneur
+
+---
+
+## 📦 Utilisation de volumes dans `docker run`
+
+### ✅ Syntaxe classique
+```bash
+docker run -v mon_volume:/chemin/interne mon_image
 ```
 
