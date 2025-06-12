@@ -181,10 +181,21 @@ Un **volume Docker** permet de **stocker des données de manière persistante**,
 
 ---
 
-## 📦 Utilisation de volumes dans `docker run`
-
-### ✅ Syntaxe classique
+## ✅ Syntaxe de base
 ```bash
-docker run -v mon_volume:/chemin/interne mon_image
+docker volume create data_vol
+docker run -v data_vol:/app/data busybox touch /app/data/fichier.txt
+docker run -v data_vol:/data busybox ls /data
 ```
+
+## 🧰 Commandes Docker utiles pour les volumes
+| Commande                           | Description                                      |
+| ---------------------------------- | ------------------------------------------------ |
+| `docker volume create mon_volume`  | Crée un nouveau volume nommé                     |
+| `docker volume ls`                 | Liste tous les volumes existants                 |
+| `docker volume inspect mon_volume` | Détails sur un volume (chemin réel, metadata...) |
+| `docker volume rm mon_volume`      | Supprime un volume (s'il n’est pas utilisé)      |
+| `docker volume prune`              | Supprime tous les volumes non utilisés           |
+
+
 
