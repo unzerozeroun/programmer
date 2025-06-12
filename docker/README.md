@@ -24,13 +24,6 @@ docker pull ubuntu:latest
 docker pull ubuntu@sha256:b59d21599a2b151e23eea5f6602f4af4d7d31c4e236d22bf0b62b86d2e386b8f
 ```
 
-## Variables
-- ARG : argument de construction
-- ENV : variable d'environnement
-```bash
-docker build --build-arg VAR_NAME=value .
-```
-
 ## Construction
 Utiliser un image sans rien y ajouter ? On démarre illico avec [docker run](#conteneurs), sinon on rédige un Dockerfile et on construit l'image.
 ```bash
@@ -72,6 +65,12 @@ docker build -t localhost:5005/mini_alpine:dev .
 docker push localhost:5005/mini_alpine:dev
 # Ici, la liste est visible via http://localhost:5005/v2/_catalog
 ```
+## Variables
+- ARG : argument de construction
+- ENV : variable d'environnement
+```bash
+docker build --build-arg VAR_NAME=value .
+```
 
 ## 🔐 Sécurité
 En production, les conteneurs devraient quasiment toujours tourner avec les droits d’un utilisateur non privilégié.
@@ -110,7 +109,6 @@ docker run -d -p 8080:80 nginx          # Serveur nginx en background
 | `--restart <policy>`            | Politique de redémarrage (`no`, `always`, `on-failure`, etc.)            | `--restart always`                    |
 | `--privileged`                  | Donne des privilèges étendus au conteneur (accès matériel, etc.)         | `--privileged`                        |
 
----
 
 ## 📂 Gestion des conteneurs
 ```bash
