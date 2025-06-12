@@ -2,19 +2,15 @@
 
 Si ce n'est pas déjà fait, consulter le [README](../README.md) à la racine afin d'installer les outils de base.
 
-## **Qu'est-ce que Docker ?**
-Docker est un outil qui permet d'exécuter des applications dans des **conteneurs** — des environnements isolés, reproductibles et portables. Grâce à Docker, une application peut être "emballée" avec tout ce dont elle a besoin (code, bibliothèques, configuration) et **fonctionner de la même manière partout** : en développement, en test, en production ou dans le cloud. Contrairement aux machines virtuelles, les conteneurs Docker sont **légers et rapides**, car ils partagent le noyau de l'hôte tout en restant isolés.  
+## Qu'est-ce que Docker ?
+Docker est un outil qui permet d'exécuter des applications dans des *conteneurs* — des environnements isolés, reproductibles et portables. Grâce à Docker, une application peut être "emballée" avec tout ce dont elle a besoin (code, bibliothèques, configuration) et fonctionner de la même manière partout : en développement, en test, en production ou dans le cloud. Contrairement aux machines virtuelles, les conteneurs Docker sont légers et rapides, car ils partagent le noyau de l'hôte tout en restant isolés.  
 
-✅ *Utilisation typique :* standardiser l’environnement de déploiement, lancer des services (web, base de données, scripts) ou tester du code sans polluer sa machine.
+✅ Utilisation typique : standardiser l’environnement de déploiement, lancer des services (web, base de données, scripts) ou tester du code sans *polluer* sa machine.
 
 ## Amorce sous macOS
-Démarrer simplement Docker Desktop
-```bash
-sudo systemctl enable docker
-sudo systemctl start docker
-```
-# Images
+Démarrer simplement Docker Desktop afin d'initialiser le démon Docker (*dockerd*) à l'intérieur d'une machine virtuelle légère Linux.
 
+# Images
 ## Recherche d'une image publique
 ```bash
 # Trouver un image pour PHP
