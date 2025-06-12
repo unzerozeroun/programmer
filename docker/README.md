@@ -15,6 +15,13 @@ sudo systemctl start docker
 docker search php
 ```
 
+## Téléchargement d'images
+```bash
+docker pull ubuntu:latest
+# ou pour une version spécifique 
+docker pull ubuntu@sha256:b59d21599a2b151e23eea5f6602f4af4d7d31c4e236d22bf0b62b86d2e386b8f
+```
+
 ## Variables
 - ARG : argument de construction
 - ENV : variable d'environnement
@@ -23,6 +30,7 @@ docker build --build-arg VAR_NAME=value .
 ```
 
 ## Construction
+Utiliser un image sans rien y ajouter ? On démarre illico avec [docker run](#conteneurs), sinon on rédige un Dockerfile et on construit l'image.
 ```bash
 docker build [OPTIONS] -t <nom_image>:<tag> <chemin_contexte>
 ```
@@ -84,19 +92,21 @@ docker run -d -p 8080:80 nginx          # Serveur nginx en background
 
 ## 🛠️ Principales options de `docker run`
 
-| Option                         | Description |
-|--------------------------------|-------------|
-| `--name <nom>`                | Donne un nom explicite au conteneur |
-| `--rm`                        | Supprime le conteneur automatiquement après son arrêt |
-| `-d`                          | Lance le conteneur en arrière-plan (mode daemon) |
-| `-it`                         | Mode interactif avec terminal (`-i` + `-t`) |
-| `-p <hôte>:<conteneur>`       | Mappe un port local vers le conteneur (ex: `-p 8080:80`) |
-| `-v <hôte>:<conteneur>`       | Monte un volume (ex: `-v $(pwd):/app`) |
-| `-e VAR=valeur`               | Définit une variable d’environnement |
-| `--network <nom>`             | Connecte à un réseau Docker |
-| `--entrypoint <commande>`     | Redéfinit le point d’entrée par défaut |
-| `--privileged`                | Donne des droits système étendus |
-| `--restart always`            | Redémarre automatiquement le conteneur après un arrêt |
+| Option                          | Description                                                              | Exemple                               |
+|----------------------------------|---------------------------------------------------------------------------|----------------------------------------|
+| `--name <nom>`                  | Donne un nom explicite au conteneur                                      | `--name mon_web`                       |
+| `--rm`                          | Supprime automatiquement le conteneur à la fin                           | `--rm`                                 |
+| `-d`                            | Lance le conteneur en arrière-plan (daemon)                              | `-d`                                   |
+| `-it`                           | Mode interactif avec terminal (`-i` + `-t`)                               | `-it`                                  |
+| `-p <hôte>:<conteneur>`         | Redirige un port local vers un port du conteneur                         | `-p 8080:80`                           |
+| `-v <hôte>:<conteneur>`         | Monte un volume local dans le conteneur                                  | `-v $(pwd):/app`                       |
+| `-e <VAR>=<valeur>`             | Définit une variable d’environnement                                      | `-e ENV=production`                   |
+| `--env-file <fichier>`          | Charge plusieurs variables d’environnement depuis un fichier             | `--env-file .env`                      |
+| `--network <nom>`               | Connecte le conteneur à un réseau Docker existant                        | `--network mon_reseau`                |
+| `--label <clé>=<valeur>`        | Ajoute une étiquette personnalisée (métadonnée)                          | `--label team=dev`                    |
+| `--entrypoint <commande>`       | Remplace le point d’entrée défini dans l’image                           | `--entrypoint /bin/sh`                |
+| `--restart <policy>`            | Politique de redémarrage (`no`, `always`, `on-failure`, etc.)            | `--restart always`                    |
+| `--privileged`                  | Donne des privilèges étendus au conteneur (accès matériel, etc.)         | `--privileged`                        |
 
 ---
 
@@ -146,5 +156,12 @@ services:
       env: "dev"
       app: "frontend"
       maintainer: "toi@example.com"
+```
+
+# Système
+Deux commandes pour afficher les infos
+```bash
+docker version
+docker system info
 ```
 
