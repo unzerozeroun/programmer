@@ -164,12 +164,6 @@ services:
       maintainer: "toi@example.com"
 ```
 
-# Système
-Deux commandes pour afficher les infos
-```bash
-docker version
-docker system info
-```
 
 # 💾 Volumes
 
@@ -198,4 +192,9 @@ docker run -v data_vol:/data busybox ls /data
 | `docker volume prune`              | Supprime tous les volumes non utilisés           |
 
 
-
+# ⚙️ Système
+Deux commandes pour afficher les infos
+```bash
+docker version
+docker system info
+```
