@@ -1,13 +1,12 @@
 #!/usr/bin/perl
 
-# Commentaire sur une ligne
+# Pour exécuter ce script, taper dans le terminal (sans le %, symbole de l´invite de commande générique)
+# % chmod +x hw.pl
+# % perl ./hw.pl
 
-=cut
-Ceci est un commentaire 
-sur plusieurs lignes
-=cut
+use strict;
+use warnings;
 
-my $variable = "Hello, World!"; # On peut aussi mettre un commentaire en fin ligne.
+my $variable = "Hello, World!";
 
-
-print $variable;
+print $variable . "\n";
