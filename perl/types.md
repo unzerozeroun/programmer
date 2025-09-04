@@ -1,3 +1,5 @@
+# Types
+
 | Type de donnée | Symbole | Description                                  | Exemple                          |
 |----------------|---------|----------------------------------------------|----------------------------------|
 | Scalaire       | `$`     | Représente une seule valeur (nombre, chaîne) | `$x = 42;`, `$nom = "Alice";`    |
