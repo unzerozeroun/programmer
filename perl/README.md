@@ -14,6 +14,6 @@ Pour vérifier si Perl (Practical Extraction and Reporting Language) est bien in
 
 ## Au menu
 - [Syntaxe](syntaxe.pl)
-- - Pour localiser perl, taper % which perl
+    - Pour localiser perl, taper ```% which perl```
 - [Hello World](hw.pl)
 - [Types](types.md)
