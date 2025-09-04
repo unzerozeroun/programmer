@@ -30,3 +30,13 @@
 | `closedir`       | Ferme un dossier ouvert                            | `closedir($dir);`                               |
 | `mkdir`          | Crée un répertoire                                 | `mkdir "dossier";`                              |
 | `rmdir`          | Supprime un répertoire vide                        | `rmdir "dossier";`                              |
+
+## 🧠 Astuce : les modes d’ouverture dans open
+```
+open my $fh, '<',  'file.txt';  # Lecture
+open my $fh, '>',  'file.txt';  # Écriture (efface si existant)
+open my $fh, '>>', 'file.txt';  # Ajout à la fin
+open my $fh, '+<', 'file.txt';  # Lecture/écriture
+```
+
+
