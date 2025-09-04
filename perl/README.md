@@ -14,6 +14,6 @@ Pour vérifier si Perl (Practical Extraction and Reporting Language) est bien in
 
 ## Au menu
 - [Syntaxe](syntaxe.pl)
-    - Quoique rarement, la première ligne ```#!/usr/bin/perl``` peut varier selon le système. Au besoin, localiser perl via le terminal % ```which perl```
 - [Hello World](hw.pl)
+    - Pour exécuter le script ```% perl hw.pl```ou ```% chmod +x hw.pl``` puis ```% ./hw.pl```
 - [Types](types.md)

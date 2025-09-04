@@ -1,8 +1,4 @@
-#!/usr/bin/perl
-
-# Pour exécuter ce script, taper dans le terminal (sans le %, symbole de l´invite de commande générique)
-# % chmod +x hw.pl
-# % perl ./hw.pl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;

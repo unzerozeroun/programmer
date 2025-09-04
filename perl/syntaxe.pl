@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 use strict; # Évite les fautes de frappe, les bugs liés à des variables non déclarées, etc.
 use warnings; # Affiche des messages d’avertissement utiles pour débusquer des comportements suspects.
