@@ -4,7 +4,7 @@
 |------------------------|-----------------------|----------------------------------|------------------------|-------------|
 | **Affectation**        | `=`                   | Assignation                     | `x = 5`               | Assigne la valeur 5 à x |
 |                        | `+=`, `-=`, `*=`, ... | Affectation composée            | `x += 1`              | Incrémente x de 1 (équivaut à `x = x + 1`) |
-
+|------------------------|-----------------------|----------------------------------|------------------------|-------------|
 | **Arithmétique**       | `+`                   | Addition                        | `3 + 2`               | Additionne deux nombres |
 |                        | `-`                   | Soustraction                    | `5 - 1`               | Soustrait deux nombres |
 |                        | `*`                   | Multiplication                  | `4 * 2`               | Multiplie deux nombres |
@@ -39,3 +39,23 @@
 
 | **Autres**             | `lambda`              | Fonction anonyme                | `lambda x: x + 1`     | Crée une fonction courte |
 |                        | `:=`                  | Opérateur Walrus                | `(n := len(liste))`   | Assigne et retourne en une seule expression (depuis Python 3.8) |
+
+# Priorités
+| Rang | Opérateurs                                  | Description                                      | Associativité       |
+|------|---------------------------------------------|--------------------------------------------------|---------------------|
+| 1    | `()`                                         | Parenthèses (groupement)                         | -                   |
+| 2    | `x[index]`, `x(attr)`, `x.attr`, `x[:]`      | Indexation, appel, accès attribut, slicing       | Gauche à droite     |
+| 3    | `**`                                         | Exponentiation                                   | Droite à gauche     |
+| 4    | `+x`, `-x`, `~x`                             | Unaires : plus, moins, inversion binaire         | Droite à gauche     |
+| 5    | `*`, `/`, `//`, `%`                          | Multiplication, division, modulo                 | Gauche à droite     |
+| 6    | `+`, `-`                                     | Addition, soustraction                           | Gauche à droite     |
+| 7    | `<<`, `>>`                                   | Décalages bit à bit                              | Gauche à droite     |
+| 8    | `&`                                          | ET binaire                                       | Gauche à droite     |
+| 9    | `^`                                          | XOR binaire                                      | Gauche à droite     |
+| 10   | `|`                                          | OU binaire                                       | Gauche à droite     |
+| 11   | `in`, `not in`, `is`, `is not`, `==`, `!=`, `<`, `<=`, `>`, `>=` | Comparaisons | Gauche à droite     |
+| 12   | `not`                                        | Négation logique                                 | Droite à gauche     |
+| 13   | `and`                                        | ET logique                                       | Gauche à droite     |
+| 14   | `or`                                         | OU logique                                       | Gauche à droite     |
+| 15   | `:=`                                         | Walrus (affectation dans expression, Python 3.8+)| Droite à gauche     |
+| 16   | `=` , `+=`, `-=`, `*=`, `/=`, `//=`, `**=`, `%=`, `&=`, `|=`, `^=`, `>>=`, `<<=` | Affectation | Droite à gauche |
