@@ -1,4 +1,4 @@
-# Types
+# 📦 Tableau des types de données Perl
 
 | Type de donnée | Symbole | Description                                  | Exemple                          |
 |----------------|---------|----------------------------------------------|----------------------------------|
