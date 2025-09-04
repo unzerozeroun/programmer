@@ -37,6 +37,9 @@ open my $fh, '<',  'file.txt';  # Lecture
 open my $fh, '>',  'file.txt';  # Écriture (efface si existant)
 open my $fh, '>>', 'file.txt';  # Ajout à la fin
 open my $fh, '+<', 'file.txt';  # Lecture/écriture
+
+# Toujours vérifier au préalable...
+open my $fh, '<', 'fichier.txt' or die "Erreur : $!";
 ```
 
 
