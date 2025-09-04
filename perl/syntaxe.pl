@@ -6,6 +6,6 @@ use warnings; # Affiche des messages d’avertissement utiles pour débusquer de
 # Commentaire sur une ligne
 
 =pod
-Ceci est un bloc de commentaire
-multiligne en utilisant POD.
+Réservé à des fins de documentation, ceci est un bloc d'un commentaire 
+multiligne utilisant POD (Plain Old Documentation).
 =cut

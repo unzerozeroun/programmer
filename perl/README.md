@@ -1,4 +1,4 @@
-# 🐫 [Perl](https://www.perl.org) : Practical Extraction & Reporting Language
+# 🐫 [Perl](https://www.perl.org)
 
 Lire le [README](../README.md) à la racine si ce n'est pas déjà fait.
 
@@ -14,5 +14,6 @@ Pour vérifier si Perl (Practical Extraction and Reporting Language) est bien in
 
 ## Au menu
 - [Syntaxe](syntaxe.pl)
+- - Pour localiser perl, taper % which perl
 - [Hello World](hw.pl)
-- [Types](types.pl)
+- [Types](types.md)
