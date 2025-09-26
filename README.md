@@ -59,3 +59,4 @@ docker version
 - 🐍 [Python](/python/)
 - 🦀 [Rust](/rust/)
   - [WebAssembly](/rust/webassembly/)
+  - [Shell](/shell/)
