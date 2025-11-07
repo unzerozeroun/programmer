@@ -1,0 +1,75 @@
+{
+  "values": [
+    {
+      "id": "97ba98c7c4ac0cc64d2467b14ba4d81f7c61113d",
+      "displayId": "97ba98c7c4a",
+      "author": {
+        "name": "sbouchar",
+        "emailAddress": "sbouchar@matrox.com",
+        "active": true,
+        "displayName": "Stéphane Bouchard",
+        "id": 7866,
+        "slug": "sbouchar",
+        "type": "NORMAL"
+      },
+      "authorTimestamp": 1753379534000,
+      "committer": {
+        "name": "sbouchar",
+        "emailAddress": "sbouchar@matrox.com",
+        "active": true,
+        "displayName": "Stéphane Bouchard",
+        "id": 7866,
+        "slug": "sbouchar",
+        "type": "NORMAL"
+      },
+      "committerTimestamp": 1753379534000,
+      "message": "Merge branch 'master' into MVX3-X-AddD2ToMaevexProduct",
+      "parents": [
+        {
+          "id": "a3c2bd572640aa606f59912c953d6d13bd6683da",
+          "displayId": "a3c2bd57264"
+        },
+        {
+          "id": "b98dfb3e6679c0ac591c1ec52cbbef0e90c40f88",
+          "displayId": "b98dfb3e667"
+        }
+      ]
+    },
+    {
+      "id": "a3c2bd572640aa606f59912c953d6d13bd6683da",
+      "displayId": "a3c2bd57264",
+      "author": {
+        "name": "sbouchar",
+        "emailAddress": "sbouchar@matrox.com",
+        "active": true,
+        "displayName": "Stéphane Bouchard",
+        "id": 7866,
+        "slug": "sbouchar",
+        "type": "NORMAL"
+      },
+      "authorTimestamp": 1753379507000,
+      "committer": {
+        "name": "sbouchar",
+        "emailAddress": "sbouchar@matrox.com",
+        "active": true,
+        "displayName": "Stéphane Bouchard",
+        "id": 7866,
+        "slug": "sbouchar",
+        "type": "NORMAL"
+      },
+      "committerTimestamp": 1753379507000,
+      "message": "MVX3-X - Add Maevex MGX D2 to maevex product",
+      "parents": [
+        {
+          "id": "2b68e7f066d06eeeecbeb53b5531972ba4bf2abf",
+          "displayId": "2b68e7f066d"
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "isLastPage": true,
+  "start": 0,
+  "limit": 25,
+  "nextPageStart": null
+}

@@ -1,0 +1,20 @@
+[package]
+name = "fetch_json"
+version = "0.1.0"
+edition = "2021"
+description = "Un exemple de fetch JSON avec Rust/Wasm"
+repository = "https://github.com/toncompte/tonprojet"
+license = "MIT"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+web-sys = { version = "0.3", features = ["console"] }
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

@@ -1,0 +1,23 @@
+# Dossiers de build Rust
+/target/
+
+# Dossier généré par wasm-pack
+/pkg/
+
+# Cache local de wasm-pack
+/.wasm-pack/
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Éventuels fichiers de dev
+.DS_Store
+*.swp
+*.swo
+
+# Node/npm si utilisé un jour
+/node_modules/
+
+# Env vars
+.env

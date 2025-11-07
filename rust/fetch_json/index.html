@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rust + Wasm + JSON</title>
+</head>
+<body>
+ <h1>Test WebAssembly avec Rust</h1>
+  <pre id="output"></pre>
+
+  <script type="module">
+    // Assure-toi que ce chemin pointe vers le JS généré par wasm-pack
+    import init, { process_commit } from './pkg/fetch_json.js';
+
+    async function run() {
+      // Initialise le module (charge le .wasm derrière le rideau)
+      await init();
+
+      // Exemple d'appel API (remplace avec une URL réelle)
+      const response = await fetch('./example.json'); // ou 'https://api...'
+      const data = await response.json();
+      const jsonStr = JSON.stringify(data);
+
+      // Appel à la fonction Rust exportée (tu dois l’avoir définie dans lib.rs)
+      process_commit(jsonStr);
+    }
+
+    run().catch(console.error);
+  </script>
+</body>
+</html>
